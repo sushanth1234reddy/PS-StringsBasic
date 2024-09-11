@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegation</title>
+</head>
+<body>
+    <ul id="main">
+        <li id="l1">IronMan</li>
+        <li id="l2">CaptainAmerica</li>
+        <li id="l3">Black Widow</li>
+        <li id="l4">Thor</li>
+    </ul>
+    <script>
+        let main=document.getElementById("main");
+        let l1=document.getElementById("l1");
+        let l2=document.getElementById("l2");
+        let l3=document.getElementById("l3");
+        let l4=document.getElementById("l4");
+
+        main.addEventListener("click",(e)=>{
+            let res=e.target.id;
+            main.innerHTML=res;
+        })
+
+    </script>
+</body>
+</html>
